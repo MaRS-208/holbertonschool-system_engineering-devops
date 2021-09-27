@@ -1,17 +1,2 @@
 #!/bin/bash
-echo "total 60
-drwxr-xr-x 2 root root   257 Sep 27 12:35 .
-drwxr-xr-x 6 root root   121 Sep 27 05:43 ..
--rwxr--r-- 1 root root    32 Sep 27 06:11 0-hello_world
--rwxr-xr-x 1 root root    28 Sep 27 06:58 1-confused_smiley
--rwxr--r-- 1 root root    30 Sep 27 07:20 2-hellofile
--rwxr--r-- 1 root root    39 Sep 27 07:26 3-twofiles
--rwxr--r-- 1 root root    29 Sep 27 09:30 4-lastlines
--rwxr-xr-x 1 root root    29 Sep 27 09:35 5-firstlines
--rwxr-xr-x 1 root root    36 Sep 27 10:13 6-third_line
--rwxr-xr-x 1 root root    60 Sep 27 10:38 7-file
--rwxr-xr-x 1 root root    18 Sep 27 12:17 8-cwd_state
--rw------- 1 root root 12288 Sep 27 10:40 .8-cwd_state.swp
--rw-r--r-- 1 root root   728 Sep 27 09:51 iacta
--rw-r--r-- 1 root root  1034 Sep 27 11:59 ls_cwd_content
--rw-r--r-- 1 root root  2098 Sep 27 05:57 README.md" ls_cwd_content
+ls -la ls_cwd_content
