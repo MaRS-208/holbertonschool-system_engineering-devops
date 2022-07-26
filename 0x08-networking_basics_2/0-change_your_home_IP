@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #Write a Bash script that configures an Ubuntu server
+
 echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com\n" > /etc/hosts
