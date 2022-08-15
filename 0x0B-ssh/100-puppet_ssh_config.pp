@@ -2,5 +2,5 @@
 
 exec { 'ssh_config':
   path    => '/usr/bin/',
-  command => 'cat 2-ssh_config > ssh_config'
+  command => 'cat 2-ssh_config > /etc/ssh/ssh_config'
 }
