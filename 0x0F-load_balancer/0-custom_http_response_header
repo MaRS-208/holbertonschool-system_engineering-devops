@@ -3,5 +3,7 @@
 
 . /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/3-redirection
 
+. /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/4-not_found_page_404
+
 sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 sudo service nginx restart
