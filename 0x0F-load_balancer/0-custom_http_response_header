@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 # Configure web-02 to be identical to web-01
-# shellcheck disable=SC1091,SC2154
+# shellcheck disable=SC2154
 
-. /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/3-redirection
-. /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/4-not_found_page_404
-
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
+sudo sed -i '/server_name _;/a rewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/error-404.html
+sudo sed -i '/root \/var\/www\/html;/a error_page 404 \/error-404.html;' /etc/nginx/sites-available/default
 sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 sudo service nginx restart
