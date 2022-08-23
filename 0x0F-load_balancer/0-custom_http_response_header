@@ -2,9 +2,8 @@
 # Configure web-02 to be identical to web-01
 # shellcheck disable=SC1091,SC2154
 
-. /home/ubuntu/3-redirection
-
-. /home/ubuntu/4-not_found_page_404
+. /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/3-redirection
+. /home/manu/holberton/holbertonschool-system_engineering-devops/0x0C-web_server/4-not_found_page_404
 
 sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 sudo service nginx restart
