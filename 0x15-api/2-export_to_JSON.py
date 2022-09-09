@@ -4,5 +4,6 @@ Python script to export data in the JSON format"""
 
 
 if __name__ == "__main__":
+    import json
     import requests
     from sys import argv
